@@ -1,26 +1,3 @@
-## sp-fx-extension
-
-This is where you include your WebPart documentation.
-
-### Building the code
-
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
-
-This package produces the following:
-
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
-
-### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+This extension will show up a message on the top of the modern page.
+The message to show will be into a separate json file.
+When the extension runs it will get the json file(the site url where the 'Site Assets/banner.json' file is uploaded is configured in the serve.json), extract the message and show up into the top placeholder of the modern site's landing page.
