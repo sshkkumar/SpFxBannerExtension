@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://sshkkumar.sharepoint.com/sites/Modern/SitePages/Home.aspx",
+      "customActions": {
+        "8fd4e699-53f0-4969-bb1d-4b2e3b6a873c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "TestMessage": "Message for dialog",
+            "TopMessage": "Banner Text Appear here",
+            "BannerSiteUrl": "https://sshkkumar.sharepoint.com/sites/Modern",
+            "BottomMessage":"Bottom Message"
+          }
+        }
+      }
+    },
+    "bannerExtension": {
+      "pageUrl": "https://sshkkumar.sharepoint.com/sites/Modern/SitePages/Home.aspx",
+      "customActions": {
+        "8fd4e699-53f0-4969-bb1d-4b2e3b6a873c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Message for dialog"
+          }
+        }
+      }
+    }
+  }
+}
