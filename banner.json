@@ -1,3 +1,6 @@
 {
-    "BannerMessage":"Your banner message goes here"
+  "Banner": {
+    "Banner1": "Youe site is migrating",
+    "Banner2": "Your site is live. Please access the target URL at {0}"
+  }
 }

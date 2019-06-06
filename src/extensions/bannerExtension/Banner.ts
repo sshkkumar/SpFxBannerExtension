@@ -4,23 +4,23 @@ import {
   ISPHttpClientOptions
 } from "@microsoft/sp-http";
 
-import{
-   ApplicationCustomizerContext
-}from '@microsoft/sp-application-base';
+import {
+  ApplicationCustomizerContext
+} from '@microsoft/sp-application-base';
 
-import {IBannerExtensionApplicationCustomizerProperties} from './ApplicationCustomizerProperties';
+import { IBannerExtensionApplicationCustomizerProperties } from './ApplicationCustomizerProperties';
 
-class Banner{
+class Banner {
 
-  public getBannerData(context: ApplicationCustomizerContext, properties: IBannerExtensionApplicationCustomizerProperties): Promise<any>{
-      let webUrl =  properties.BannerSiteUrl;//context.pageContext.web.absoluteUrl;
-      let requestUrl = webUrl.concat("/_api/web/GetFolderByServerRelativeUrl('SiteAssets')/Files('banner.json')/$value");
+  public getBannerText(context: ApplicationCustomizerContext, properties: IBannerExtensionApplicationCustomizerProperties): Promise<any> {
+    let webUrl = properties.BannerSiteUrl;//context.pageContext.web.absoluteUrl;
+    let requestUrl = webUrl.concat("/_api/web/GetFolderByServerRelativeUrl('SiteAssets')/Files('banner.json')/$value");
 
-      return context.spHttpClient.get(requestUrl, SPHttpClient.configurations.v1)
+    return context.spHttpClient.get(requestUrl, SPHttpClient.configurations.v1)
       .then((response: SPHttpClientResponse) => {
-          return response.json();
+        return response.json();
       });
-    }
+  }
 }
 
 export default Banner;

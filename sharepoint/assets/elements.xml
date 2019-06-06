@@ -4,6 +4,6 @@
         Title="BannerExtension"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="8fd4e699-53f0-4969-bb1d-4b2e3b6a873c"
-        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;&quot;TopMessage&quot;:&quot;Banner Text Appear here&quot;&quot;BannerSiteUrl&quot;:&quot;https://sshkkumar.sharepoint.com/sites/Modern&quot;&quot;BottomMessage&quot;:&quot;Bottom Message&quot;}">
     </CustomAction>
 </Elements>
